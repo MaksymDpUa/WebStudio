@@ -28,11 +28,11 @@
         >
         <button
           type="button"
-          class="menu-toggle js-open-menu"
+          class="toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg width="40" height="40" class="menu-toggle--selected">
+          <svg width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
@@ -446,7 +446,7 @@
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
-        <h2 class="madal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
         <form name="user-form" class="form">
           <label for="user-name" class="form__lable">Ім'я</label>
           <div class="form__thumb">
@@ -496,20 +496,34 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-      <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle menu-toggle--closing js-close-menu">
-        <svg width="40" height="40" class="menu-toggle--selected">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="toggle toggle--closing js-close-menu">
+        <svg width="40" height="40">
           <use href="./images/icons.svg#icon-close-mobile"></use>
         </svg>
       </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">Студія</a></li>
-        <li><a href="" class="link">Портфоліо</a></li>
-        <li><a href="" class="link">Контакти</a></li>
-       </ul>
+      <ul class="mobile-menu__pages-list">
+        <li><a href="" class="mobile-menu__page">Студія</a></li>
+        <li><a href="" class="mobile-menu__page">Портфоліо</a></li>
+        <li><a href="" class="mobile-menu__page">Контакти</a></li>
+      </ul>
+      <a href="tel:+380961111111" class="mobile-menu__tel"> +38 096 111 11 11</a>
+      <a href="mailto:info@dewstudio.com" class="mobile-menu__email"> info@dewstudio.com</a>
+      <ul class="mobile-menu__social">
+        <li>
+          <a href="#" class="mobile-menu__link"
+            >Instagram<span class="mobile-menu__dash">|</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__link">Twitter<span class="mobile-menu__dash">|</span></a>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__link">Facebook<span class="mobile-menu__dash">|</span></a>
+        </li>
+        <li><a href="#" class="mobile-menu__link">LinkedIn</a></li>
+      </ul>
     </div>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

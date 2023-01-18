@@ -1,4 +1,4 @@
-.menu-toggle {
+.toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -12,23 +12,17 @@
   border: none;
   border-radius: 50%;
   outline: none;
-
+  fill: inherit;
+  &:hover {
+      border-color: var(--accent-color);
+      fill: var(--accent-color);
+    }
   &--closing {
     position: absolute;
     top: 10px;
     right: 15px;
   }
-  // &__selected {
-  //   fill: inherit;
-  //   &:focus,
-  //   &:hover {
-  //     fill: var(--accent-color);
-  //   }
-  // }
-  // & &__selected:hover,
-  // & &__selected:focus {
-  //   fill: var(--accent-color);
-  // }
+  
   @media screen and (min-width: 768px) {
     display: none;
   }

@@ -1,64 +1,79 @@
-// .menu-toggle {
-//   min-height: 40px;
-//   min-width: 40px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-// //   margin: 0;
-// //   padding: 0;
-// //   background-color: transparent;
-// //   cursor: pointer;
-// //   border: none;
-// //   border-radius: 50%;
-// //   outline: none;
-// // }
-
-// @media (min-width: 768px) {
-//     .menu-toggle {
-//         display: none;
-//     }
-// }
-
-// .menu-toggle:hover,
-// .menu-toggle:focus {
-//     background-color: rgba(0, 0, 0, 0.1);
-// }
-
-.menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 0px 48px 40px;
-    background-color: var(--primary-background-color);
-    z-index: 999;
-
-    transform: translateX(100%);
-    transition: transform $transition;
-}
-
-.menu-container.is-open {
-    transform: translateX(0);
-}
-
-// .menu-container .menu-toggle {
-//     position: absolute;
-//     top: 16px;
-//     right: 16px;
-//     color: #fff;
-// }
-
 .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0px 48px 40px;
+  background-color: var(--primary-background-color);
+  z-index: 999;
+  overflow: auto;
+
+  transform: translateX(100%);
+  transition: transform $transition;
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__pages-list {
+    margin-bottom: 306px;
+  }
+
+  &__page {
+    display: block;
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+  }
+
+&__tel {
+    display: block;
+    margin-bottom: 32px;
+    font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+   letter-spacing: 0.02em;
+  color: var(--accent-color);  
 }
 
-.mobile-menu .link {
+&__email {
     display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+    margin-bottom: 64px;
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
 }
+
+&__social {
+    display: flex;
+    align-items: baseline;
+ 
+  
+}
+
+&__link {
+    display: block;
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+      
+        letter-spacing: 0.02em;
+    
+        color: var(--accent-color);
+        // border-right: 1px solid var(--input-border-color);
+      
+}
+
+&__dash {
+    
+    margin: 0px 10px;
+   font-size: 22px;
+    color: var(--input-border-color);
+}
+}
+
