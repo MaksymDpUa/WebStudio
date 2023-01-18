@@ -430,6 +430,12 @@ body {
   border-radius: 4px;
   overflow: auto;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal__title {
   margin-bottom: 12px;
   font-weight: 700;
