@@ -1,4 +1,10 @@
-// .discription {
+.discription {
+   @media screen and (max-width: 1199px) {
+     display: none;
+   }
+       
+        
+    }
 //   padding-bottom: 94px;
 
 //   &__title {
@@ -36,4 +42,4 @@
 //     background-color: var(--discrip-text-bcg);
 //     color: var(--alternative-text-color);
 //   }
-// }
+
