@@ -7,20 +7,31 @@
 //     display: flex;
 //     align-items: baseline;
 //   }
-
-  &__adress-block {
-    margin-bottom: 60px;
-    // margin-right: 70px;
+&__contacts-box {
+  @include tablet {
+    display: flex;
+    align-items: flex-start;
   }
+}
 &__logo {
     margin-bottom: 20px;
 }
+
+  &__adress-block {
+ 
+    margin-bottom: 60px;
+    width: 50%;
+    // margin-right: 70px;
+  }
+
 //   &__logo {
 //     margin-bottom: 28px;
 //   }
 
   &__social-block {
+
     margin-bottom: 60px;
+    width: 50%;
 //     // display: block;
 //     width: 206px;
   }
