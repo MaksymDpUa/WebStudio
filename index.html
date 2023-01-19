@@ -49,16 +49,16 @@
         </nav>
         <ul class="header__contacts-list">
           <li class="header__contacts-item">
-            <a href="mailto:info@dewstudio.com" class="header__button">
-              <svg class="header__contact-icon" width="16px" height="12px">
+            <a href="mailto:info@dewstudio.com" class="header__contact">
+              <svg class="header__icon-mail" width="14px" height="10px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@dewstudio.com</a
             >
           </li>
           <li class="header__contacts-item">
-            <a href="tel:+380961111111" class="header__button">
-              <svg class="header__contact-icon" width="10px" height="16px">
+            <a href="tel:+380961111111" class="header__contact">
+              <svg class="header__icon-tel" width="10px" height="14px">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -162,12 +162,35 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team__container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
-            <li>
+            <li class="team__item">
               <div class="team__card">
-                <img src="./images/igor450.jpg" alt="чоловік в окулярах" class="team__photo" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/igor-tablet.jpg    1x,
+                      ./images/igor-tablet@2x.jpg 2x,
+                      ./images/igor-tablet@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-desktop.jpg    1x,
+                      ./images/igor-desktop@2x.jpg 2x,
+                      ./images/igor-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    srcset="./images/igor450@2x.jpg 2x, ./images/igor450@3x.jpg 3x"
+                    src="./images/igor450.jpg"
+                    alt="чоловік в окулярах"
+                  />
+                </picture>
+
                 <div class="team__text">
                   <h3 class="team__name">Ігор Дем'яненко</h3>
                   <p class="team__position">Product Designer</p>
@@ -202,9 +225,31 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="team__card">
-                <img src="./images/olga450.jpg" alt="білява дівчинка в окулярах" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/olga-tablet.jpg    1x,
+                      ./images/olga-tablet@2x.jpg 2x,
+                      ./images/olga-tablet@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-desktop.jpg    1x,
+                      ./images/olga-desktop@2x.jpg 2x,
+                      ./images/olga-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    srcset="./images/olga450@2x.jpg 2x, ./images/olga450@3x.jpg 3x"
+                    src="./images/olga450.jpg"
+                    alt="білява дівчинка в окулярах"
+                  />
+                </picture>
                 <div class="team__text">
                   <h3 class="team__name">Ольга Рєпіна</h3>
                   <p class="team__position">Frontend Developer</p>
@@ -239,9 +284,31 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="team__card">
-                <img src="./images/mikola450.jpg" alt="чоловік в сорочці посміхається" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mikola-tablet.jpg    1x,
+                      ./images/mikola-tablet@2x.jpg 2x,
+                      ./images/mikola-tablet@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mikola-desktop.jpg    1x,
+                      ./images/mikola-desktop@2x.jpg 2x,
+                      ./images/mikola-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    srcset="./images/mikola450@2x.jpg 2x, ./images/mikola450@3x.jpg 3x"
+                    src="./images/mikola450.jpg"
+                    alt="чоловік в сорочці посміхається"
+                  />
+                </picture>
                 <div class="team__text">
                   <h3 class="team__name">Микола Тарасов</h3>
                   <p class="team__position">Marketing</p>
@@ -276,9 +343,32 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <div class="team__card">
-                <img src="./images/mihail450.jpg" alt="чоловік в окулярах та чорній футболці" />
+        <picture>
+                  <source
+                    srcset="
+                      ./images/mihail-tablet.jpg    1x,
+                      ./images/mihail-tablet@2x.jpg 2x,
+                      ./images/mihail-tablet@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-desktop.jpg    1x,
+                      ./images/mihail-desktop@2x.jpg 2x,
+                      ./images/mihail-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    srcset="./images/mihail450@2x.jpg 2x, ./images/mihail450@3x.jpg 3x"
+                    src="./images/mihail450.jpg"
+                    alt="чоловік в окулярах та чорній футболці"
+                  />
+                </picture>
+                
                 <div class="team__text">
                   <h3 class="team__name">Михайло Єрмаков</h3>
                   <p class="team__position">UI Designe</p>
@@ -503,7 +593,7 @@
         </svg>
       </button>
       <ul class="mobile-menu__pages-list">
-        <li><a href="" class="mobile-menu__page">Студія</a></li>
+        <li><a href="" class="mobile-menu__page mobile-menu__page--curent">Студія</a></li>
         <li><a href="" class="mobile-menu__page">Портфоліо</a></li>
         <li><a href="" class="mobile-menu__page">Контакти</a></li>
       </ul>
