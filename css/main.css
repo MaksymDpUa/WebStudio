@@ -464,6 +464,21 @@ body {
   text-transform: uppercase;
   color: var(--alternative-text-color);
 }
+@media screen and (min-width: 768px) {
+  .subscription__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+}
 .subscription__email {
   max-width: 450px;
   width: 100%;
@@ -504,11 +519,6 @@ body {
 .subscription__email:focus, .subscription__email:hover {
   border-color: var(--accent-color);
   outline: transparent;
-}
-.subscription__button-box {
-  position: relative;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 .subscription__button {
   position: relative;
@@ -766,11 +776,19 @@ body {
 }
 .footer__adress-block {
   margin-bottom: 60px;
-  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .footer__adress-block {
+    width: 50%;
+  }
 }
 .footer__social-block {
   margin-bottom: 60px;
-  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .footer__social-block {
+    width: 50%;
+  }
 }
 .footer__title {
   font-weight: 700;

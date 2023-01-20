@@ -12,11 +12,14 @@
     color: var(--alternative-text-color);
   }
 
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//     position: relative;
-//   }
+  &__container {
+    @include tablet {display: flex;
+      flex-direction: column;
+
+    align-items: center;
+    position: relative;}
+    
+  }
 
   &__email {
 
@@ -45,10 +48,7 @@
       outline: transparent;
     }
   }
-&__button-box{
-position: relative;
-box-sizing: content-box;
-}
+
 
   &__button {
    position: relative;
