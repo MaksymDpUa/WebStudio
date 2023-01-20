@@ -14,16 +14,15 @@
   &__filters-list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
-    margin-bottom: 50px;
+    row-gap: 15px;
+  //   column-gap: 8px;
+  //   // justify-content: center;
+  //   margin-bottom: 50px;
   }
 
-  &__filters-item {
-    margin-right: 8px;
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
+  // &__filters-item {
+  // Gap-row та gap-column
+  // }
 
   &__filters-button {
     padding: 6px 22px;
