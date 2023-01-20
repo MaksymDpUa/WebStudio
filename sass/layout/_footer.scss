@@ -3,14 +3,20 @@
   padding: 60px 0px;
   text-align: center;
 
-//   &__container {
-//     display: flex;
-//     align-items: baseline;
-//   }
+  &__container {
+    @include desktop {
+          display: flex;
+    align-items: baseline;
+    }
+
+  }
 &__contacts-box {
   @include tablet {
     display: flex;
-    align-items: flex-start;
+    // align-items: flex-start;
+  }
+  @include desktop {
+    align-items: baseline;
   }
 }
 &__logo {
@@ -23,13 +29,14 @@
     @include tablet {
        width: 50%;
     }
+   @include desktop {
+    margin-bottom: 0px;
+     margin-right: 70px;
+  }
    
-    // margin-right: 70px;
   }
 
-//   &__logo {
-//     margin-bottom: 28px;
-//   }
+
 
   &__social-block {
 
@@ -37,8 +44,12 @@
     @include tablet {
         width: 50%;
       }
-//     // display: block;
-//     width: 206px;
+      @include desktop {
+        margin-bottom: 0px;
+            display: block;
+    width: 206px;
+      }
+
   }
 
   &__title {

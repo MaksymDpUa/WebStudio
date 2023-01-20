@@ -9,7 +9,7 @@
        max-width: 768px;
     }
 
-//     @include desktop {
-//         width: 1200px;
-//     }
+    @include desktop {
+        max-width: 1200px;
+    }
 }

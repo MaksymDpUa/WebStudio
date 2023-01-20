@@ -1,13 +1,22 @@
 .benefits {
+  &__container {
+   
+      padding-top: 60px;
+      padding-bottom: 60px;
+  
+    @include desktop {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
 
-  &__list { 
+  &__list {
     @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
     }
-    
-    }
+  }
 
   &__thumb {
     display: flex;
@@ -25,6 +34,9 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
+    @include tablet {
+      text-align: start;
+    }
   }
 
   &__text {
@@ -38,18 +50,22 @@
     // width: 270px;
     margin-bottom: 30px;
     &:last-child {
-      margin-bottom: 60px;}
-      @include tablet {
-        width:calc((100% - 4 * 15px) / 2) ;
-        margin: 15px;
+      margin-bottom: 0px;
+    }
+    @include tablet {
+      &:last-child {
+        margin-bottom: 15px;
       }
-    
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @include desktop {
+      width: calc((100% - 8 * 15px) / 4);
+    }
   }
 }
 //   padding-top: 94px;
 //   padding-bottom: 94px;
-
-
 
 //   }
 
