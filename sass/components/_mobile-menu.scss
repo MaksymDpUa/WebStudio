@@ -14,13 +14,11 @@
 
   transform: translateX(100%);
   transition: transform $transition;
+
   &.is-open {
     transform: translateX(0);
   }
-  // &__pages-list {
-  //   // margin-bottom: 306px;
-  // }
-
+ 
   &__page {
     display: block;
     margin-bottom: 32px;
